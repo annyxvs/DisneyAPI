@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Botao = styled.button<props>`
+export const Botao = styled.button`
     border: none;
 
     text-transform: uppercase;
