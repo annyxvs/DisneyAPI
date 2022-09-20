@@ -31,6 +31,16 @@ export const Content = styled.div`
             min-width: 45vw;
         }
     }
+    @media (max-width: 375px) {
+        &{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        & img{
+            min-width: 60vw;
+        }
+    }
 `
 
 export const Card = styled.div`

@@ -22,9 +22,14 @@ function App() {
   }
 
   useEffect(() => {
-    getCharacters();
+    getCharacters(count);
   },[])
 
+  if(count <= 0){
+    setCount(1)
+  }else if(count >= 149){
+    setCount(149)
+  }
 
   const pageN = () =>{
     setCount(count + 1)
@@ -55,6 +60,7 @@ function App() {
       {!loading && <S.Main> {characters.map((e,i) => (<Card character={e} key={i}/> ))} </S.Main>}
     
     <Button title=' ↑' func={back} float='float'/>
+    {count}
     </S.App>
   )
 }
