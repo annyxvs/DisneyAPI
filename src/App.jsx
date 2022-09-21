@@ -60,7 +60,6 @@ function App() {
       {!loading && <S.Main> {characters.map((e,i) => (<Card character={e} key={i}/> ))} </S.Main>}
     
     <Button title=' ↑' func={back} float='float'/>
-    {count}
     </S.App>
   )
 }
